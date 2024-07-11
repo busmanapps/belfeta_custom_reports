@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<record id="account_report_invoice_document" model="ir.actions.report">
+        <field name="name">Account Invoice</field>
+        <field name="model">account.move</field>
+        <field name="report_name">account.report_invoice_document</field>
+        <field name="report_type">qweb-pdf</field>
+    </record>
+    <template id="report_invoice_document_custom" inherit_id="account_report_invoice_document">
+        <!--
+        <xpath expr="//img[@class='img-fluid o_logo']" position="attributes">
+            <attribute name="style">max-height: 160px;</attribute>
+        </xpath> -->
+        
+        <xpath expr="//th[@name='th_taxes']" position="attributes">
+            <attribute name="t-attf-class">d-none</attribute>
+        </xpath>
+        <xpath expr="//td[@name='td_taxes']" position="attributes">
+            <attribute name="t-attf-class">d-none</attribute>
+        </xpath>
+        
+        <xpath expr="//p[@name='payment_communication']" position="replace"/>
+    </template>
+</odoo>
