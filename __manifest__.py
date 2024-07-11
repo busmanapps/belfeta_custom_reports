@@ -1,6 +1,6 @@
 {
-    'name': '<Nombre del módulo>',
-    'version': '<Versión>',
+    'name': 'Belfeta',
+    'version': '16.0.1.0.0',
     'description': '',
     'summary': '',
     'author': 'Busman View',
