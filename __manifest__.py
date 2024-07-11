@@ -11,7 +11,7 @@
         'web'
     ],
     'data': [
-
+        'reports/report_invoice_document_inherit.xml'
     ],
     'auto_install': False,
     'application': False,

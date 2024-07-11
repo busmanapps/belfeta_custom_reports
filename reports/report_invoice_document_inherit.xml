@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_invoice_document_custom" inherit_id="account.report_invoice_document">
+        <!-- Aumentar el tamaño del logo en la cabecera -->
+        <xpath expr="//img[@class='img-fluid o_logo']" position="attributes">
+            <attribute name="style">max-height: 160px;</attribute>
+        </xpath>
+        
+        <!-- Eliminar la columna 'Impuestos' en las líneas de la factura -->
+        <xpath expr="//th[@name='th_taxes']" position="attributes">
+            <attribute name="t-attf-class">d-none</attribute>
+        </xpath>
+        <xpath expr="//td[@name='td_taxes']" position="attributes">
+            <attribute name="t-attf-class">d-none</attribute>
+        </xpath>
+        
+        <!-- Reducir el número de líneas en el pie de página a una y disminuir el tamaño de la fuente -->
+        <xpath expr="//div[@id='total']/div/div/table" position="replace">
+            <table class="table table-sm table-borderless" style="page-break-inside: avoid; font-size: 10px;">
+                <!-- Copiar el contenido relevante del pie de página, ajustando el tamaño de la fuente -->
+                <t t-set="tax_totals" t-value="o.tax_totals"/>
+                <t t-call="account.document_tax_totals"/>
+            </table>
+        </xpath>
+        
+        <!-- Eliminar el texto debajo del total referente a la referencia de pago -->
+        <xpath expr="//p[@name='payment_communication']" position="replace"/>
+    </template>
+</odoo>
