@@ -12,7 +12,7 @@
         <xpath expr="//th[@name='th_taxes']" position="attributes">
             <attribute name="t-attf-class">d-none</attribute>
         </xpath>
-        <xpath expr="//td[@name='td_taxes']" position="attributes">
+        <xpath expr="//td[@name='th_taxes']" position="attributes">
             <attribute name="t-attf-class">d-none</attribute>
         </xpath>
         
