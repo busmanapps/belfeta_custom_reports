@@ -1,17 +1,17 @@
 {
-    'name': 'Belfeta',
+    'name': 'Factura',
     'version': '16.0.1.0.0',
     'description': '',
     'summary': '',
     'author': 'Busman View',
     'website': 'https://busman.es',
     'license': 'LGPL-3',
-    'category': '',
+    'category': 'Accounting',
     'depends': [
-        'web'
+        'web', 'account'
     ],
     'data': [
-        'reports/report_invoice_document_inherit.xml'
+        'views/report_invoice_document_inherit.xml'
     ],
     'auto_install': False,
     'application': False,
