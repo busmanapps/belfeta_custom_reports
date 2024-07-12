@@ -7,13 +7,14 @@
             <attribute name="style">max-height: 160px;</attribute>
         </xpath> -->
         
-        <xpath expr="//th[@name='th_taxes']" position="attributes">
+        <!-- <xpath expr="//th[@name='th_taxes']" position="attributes">
             <attribute name="t-attf-class">invisible</attribute>
         </xpath>
         <xpath expr="//span[@id='line_tax_ids']" position="attributes">
             <attribute name="t-attf-class">invisible</attribute>
-        </xpath>
-
+        </xpath> -->
+        <xpath expr="//th[@name='th_taxes']" position="replace"/>
+        <xpath expr="//td[@name='td_taxes']" position="replace"/>
 
         <xpath expr="//th[@name='th_subtotal']/span" position="attributes">
             <attribute name="style">float: right;</attribute>
