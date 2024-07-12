@@ -8,11 +8,17 @@
         </xpath> -->
         
         <xpath expr="//th[@name='th_taxes']" position="attributes">
-            <attribute name="t-attf-class">d-none</attribute>
+            <attribute name="t-attf-class">invisible</attribute>
         </xpath>
         <xpath expr="//span[@id='line_tax_ids']" position="attributes">
-            <attribute name="t-attf-class">d-none</attribute>
+            <attribute name="t-attf-class">invisible</attribute>
         </xpath>
+
+
+        <xpath expr="//th[@name='th_subtotal']/span" position="attributes">
+            <attribute name="style">float: right;</attribute>
+        </xpath>
+
         
         <xpath expr="//p[@name='payment_communication']" position="replace"/>
 
