@@ -29,9 +29,20 @@
         </xpath>
 
         <xpath expr="//div[@class='float-start company_address']" position="attributes">
-            <attribute name="style">margin-left: 10px;</attribute>
+            <attribute name="style">margin-left: 40px;</attribute>
         </xpath>
 
+    </template>
+
+    <template id="report_invoice_footer_inherit" inherit_id="web.external_layout_striped">
+       
+        <xpath expr="//img[@class='float-start']" position="attributes">
+            <attribute name="style">transform: scale(2);</attribute>
+        </xpath>
+
+        <xpath expr="//div[@class='float-start company_address']" position="attributes">
+            <attribute name="style">margin-left: 40px;</attribute>
+        </xpath>
 
     </template>
 </odoo>
