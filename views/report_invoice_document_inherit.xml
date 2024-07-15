@@ -22,12 +22,12 @@
     
     </template>
 
-    <template id="report_invoice_document_inherit" inherit_id="web.external_layout_striped">
+     <template id="report_invoice_document_inherit" inherit_id="web.external_layout_striped">
        
         <xpath expr="//img[@class='float-start']" position="attributes">
             <attribute name="style">transform: scale(2);</attribute>
         </xpath>
 
 
-    <template/>
+    </template>
 </odoo>
