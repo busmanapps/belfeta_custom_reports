@@ -14,7 +14,7 @@
         </xpath> -->
         <xpath expr="//th[@name='th_taxes']" position="replace"/>
         <!-- <xpath expr="//td[@name='td_taxes']" position="replace"/>  -->
-        <xpath expr="//td[@id='line_tax_ids']" position="replace"/>
+        <xpath expr="//span[@id='line_tax_ids']" position="replace"/>
 
         <xpath expr="//th[@name='th_subtotal']/span" position="attributes">
             <attribute name="style">float: right;</attribute>
