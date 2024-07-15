@@ -30,6 +30,6 @@
             <attribute name="class">text-end</attribute>
         </xpath>
 
-        <xpath expr="th[@class='border-black text-end']" position="replace"/>
+        <xpath expr="//th[@class='border-black text-end']" position="replace"/>
     </template>
 </odoo>
