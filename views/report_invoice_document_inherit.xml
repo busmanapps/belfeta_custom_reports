@@ -36,7 +36,9 @@
 
     <template id="report_invoice_footer_inherit" inherit_id="web.external_layout_striped">
        
-        <xpath expr="//span[@class='topage']" position="attributes"/>
+        <xpath expr="//ul[@class='list-inline']" position="attributes">
+            <attribute name="style" add="border-bottom: none;"/>
+        </xpath>
 
     </template>
 </odoo>
