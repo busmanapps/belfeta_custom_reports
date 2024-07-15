@@ -25,7 +25,7 @@
     <template id="report_invoice_header_inherit" inherit_id="web.external_layout_striped">
        
         <xpath expr="//img[@class='float-start']" position="attributes">
-            <attribute name="style">transform: scale(2); margin-left: 10px;</attribute>
+            <attribute name="style">transform: scale(2); margin-left: 30px;</attribute>
         </xpath>
 
         <xpath expr="//div[@class='float-start company_address']" position="attributes">
