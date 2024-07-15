@@ -36,7 +36,7 @@
 
     <template id="report_invoice_footer_inherit" inherit_id="web.external_layout_striped">
        
-        
+        <xpath expr="//span[@class='topage']" position="attributes"/>
 
     </template>
 </odoo>
