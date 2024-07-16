@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_invoice_document_inherit" inherit_id="account.report_invoice_document">
+
+        
+        
+        <xpath expr="//th[@name='th_taxes']" position="replace"/>
+       
+        <xpath expr="//td[@name='td_taxes']" position="replace"/>
+
+        <xpath expr="//th[@name='th_subtotal']/span" position="attributes">
+            <attribute name="style">float: right;</attribute>
+        </xpath>
+
+        <xpath expr="//p[@name='payment_communication']" position="replace"/>
+
+        <xpath expr="//th[@class='border-black text-end']" position="replace"/>
+    
+    </template>
+
+    <template id="report_invoice_header_inherit" inherit_id="web.external_layout_striped">
+       
+        <xpath expr="//img[@class='float-start']" position="attributes">
+            <attribute name="style">transform: scale(2); margin-left: 30px;</attribute>
+        </xpath>
+
+        <xpath expr="//div[@class='float-start company_address']" position="attributes">
+            <attribute name="style">margin-left: 60px;</attribute>
+        </xpath>
+
+    </template>
+
+    <template id="report_invoice_footer_inherit" inherit_id="web.external_layout_striped">
+       
+        <xpath expr="//ul[@class='list-inline']" position="attributes">
+            <attribute name="style" add="border-bottom: none;"/>
+        </xpath>
+
+    </template>
+</odoo>
